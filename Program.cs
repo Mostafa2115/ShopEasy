@@ -12,7 +12,7 @@ class Program
         var configuration = new ConfigurationBuilder().SetBasePath(AppContext.BaseDirectory).AddJsonFile("appsettings.json").Build();
         var connectionString = configuration.GetConnectionString("DefaultConnection");
         var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-        optionsBuilder.UseSqlServer(connectionString);  //.UseLazyLoadingProxies();
+        optionsBuilder.UseSqlServer(connectionString);   //.UseLazyLoadingProxies();
         using var context = new AppDbContext(optionsBuilder.Options);
         await new DataSeeder(context).SeedAsync();
         Console.WriteLine("AppDbContext initialized successfully!");
