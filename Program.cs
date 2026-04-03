@@ -63,7 +63,7 @@ class Program
         //    .SingleOrDefaultAsync(c => c.CustomerId == customerId);
 
         //if (customer == null)
-        //    Console.WriteLine("Customer not found ❌");
+        //    Console.WriteLine("Customer not found");
         //else
         //{
         //    Console.WriteLine($"Name: {customer.FullName}");
@@ -162,10 +162,10 @@ class Program
         //    {
         //        var avgRating = product.Reviews.Average(r => r.Rating);
         //        var totalReviews = product.Reviews.Count();
-        //        Console.WriteLine($"Average Rating: {avgRating:F1} ⭐ ({totalReviews} reviews)");
+        //        Console.WriteLine($"Average Rating: {avgRating:F1}  ({totalReviews} reviews)");
         //        Console.WriteLine("Reviews:");
         //        foreach (var review in product.Reviews)
-        //            Console.WriteLine($"- {review.Rating}⭐ by Customer {review.CustomerId}: {review.Comment}");
+        //            Console.WriteLine($"- {review.Rating} by Customer {review.CustomerId}: {review.Comment}");
         //    }
         //    else
         //        Console.WriteLine("No reviews yet.");
